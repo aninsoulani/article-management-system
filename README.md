@@ -42,7 +42,7 @@ go mod tidy
 c. Jalankan server backend:
 
 ```bash
-go run main.go
+go run .
 ```
 
 ✅ Server backend akan berjalan di `http://localhost:8080` (atau port lain sesuai konfigurasi Anda).
