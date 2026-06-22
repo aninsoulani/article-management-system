@@ -1,70 +1,125 @@
-# Project Artikel (Go & Next.js)
+# Article Management System
 
-Ini adalah repository untuk aplikasi artikel sederhana yang dibuat menggunakan Go untuk backend API dan Next.js untuk dashboard frontend.
+A full-stack article management system built using Go for the backend REST API and Next.js for the frontend dashboard.
 
-## 📂 Struktur Folder
-
-Repository ini adalah monorepo yang berisi dua proyek utama:
-
-- `/article-services-go`: Folder untuk layanan backend yang dibuat dengan bahasa Go.
-- `/article-dashboard-nextjs`: Folder untuk aplikasi frontend dashboard yang dibuat dengan Next.js.
+This project demonstrates a separated architecture between backend services and frontend interface, focusing on API design, data handling, and dashboard interaction.
 
 ---
 
-## 🛠️ Prasyarat (Prerequisites)
+## 📁 Project Structure
 
-Pastikan perangkat Anda sudah terinstall:
+This repository is a monorepo containing two main services:
 
-- [Go](https://go.dev/doc/install) (versi 1.18 atau lebih baru)
-- [Node.js](https://nodejs.org/en/) (versi 16 atau lebih baru)
-- NPM / Yarn
+```
+/article-services-go       → Backend (Go REST API)
+/article-dashboard-nextjs → Frontend (Next.js Dashboard)
+```
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## 🛠️ Tech Stack
 
-Proyek ini terdiri dari dua bagian (backend dan frontend) yang harus dijalankan secara terpisah di terminal yang berbeda.
+### Backend
 
-### 1. Menjalankan Backend (Go Service)
+* Go (Golang)
+* REST API
+* Go Modules
 
-a. Buka terminal baru, lalu masuk ke direktori backend:
+### Frontend
+
+* Next.js
+* React
+* JavaScript / TypeScript
+* Axios
+
+---
+
+## 🚀 Getting Started
+
+This project runs in two separate services. You need to run both backend and frontend in different terminals.
+
+---
+
+## 1. Backend (Go Service)
+
+### Navigate to backend folder
 
 ```bash
 cd article-services-go
 ```
 
-b. Download semua dependency yang dibutuhkan:
+### Install dependencies
 
 ```bash
 go mod tidy
 ```
 
-c. Jalankan server backend:
+### Run backend server
 
 ```bash
 go run .
 ```
 
-✅ Server backend akan berjalan di `http://localhost:8080` (atau port lain sesuai konfigurasi Anda).
+Backend will run at:
 
-### 2. Menjalankan Frontend (Next.js Dashboard)
+```
+http://localhost:8080
+```
 
-a. Buka terminal **kedua** (biarkan terminal backend tetap berjalan), lalu masuk ke direktori frontend:
+---
+
+## 2. Frontend (Next.js Dashboard)
+
+### Open a new terminal
+
+### Navigate to frontend folder
 
 ```bash
 cd article-dashboard-nextjs
 ```
 
-b. Install semua dependency yang dibutuhkan:
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-c. Jalankan server development frontend:
+### Run development server
 
 ```bash
 npm run dev
 ```
 
-✅ Aplikasi frontend akan berjalan dan bisa diakses di `http://localhost:3000`.
+Frontend will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## ✨ Features
+
+* Article CRUD (Create, Read, Update, Delete)
+* RESTful API built with Go
+* Dashboard interface using Next.js
+* Separation of backend and frontend services
+* Simple and scalable architecture
+
+---
+
+## 🎯 Purpose of Project
+
+This project was built to practice:
+
+* Building REST APIs using Go
+* Consuming APIs using Next.js frontend
+* Full-stack application architecture
+* Monorepo project structure
+* Basic content management system design
+
+---
+
+## 📌 Notes
+
+This is a learning project focused on full-stack integration between Go and Next.js. It is not intended for production use.
